@@ -27,6 +27,51 @@ body {
   height: 304px;
 }
 
+/* ส่วน Recommend item */
+.recommend-part {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url("../src/Art-Furniture-rainbow-bench-1024x680.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 14px 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.recommend-part:hover {
+  filter: brightness(0.9);
+}
+
+.recommend-part-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.recommend-part-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #000;
+  flex-shrink: 0;
+}
 
 /* CSS of Member (Tri) */
 
@@ -39,116 +84,112 @@ body {
   height: 72px;
   background-color: #e8e7e7;
   border-radius: 14px 14px;
-  
 }
-      .footer-logo {
-        width: 30%;
-        
-      }
 
-          .footer-p {
-              text-align: left;
-              font-size: 36px;
-              font-weight: bold;
-              text-shadow: 0px 2px 2px #000000;
-              color: #191919;     
-              margin-left: 35px; 
-              margin-right: 10px;; 
-          }
+.footer-logo {
+  width: 30%;
+}
 
-           .footer-logo img {
-              width: 74px;
-              height: 44px;
-              object-fit: cover;
-              margin-left: 35px; 
-              margin-right: 10px;; 
-          }
+.footer-p {
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 0px 2px 2px #000000;
+  color: #191919;
+  margin-left: 35px;
+  margin-right: 10px;
+}
+
+.footer-logo img {
+  width: 74px;
+  height: 44px;
+  object-fit: cover;
+  margin-left: 35px;
+  margin-right: 10px;
+}
 
 .footer-nav {
- width: 100%;
- 
+  width: 100%;
 }
-        .footer-nav a {
-          text-align: center;
-          color: #191919;
-          font-size: 20px;
-          font-weight: 500;
-        }
+.footer-nav a {
+  text-align: center;
+  color: #191919;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .footer-copyright {
-width: 100%;
-text-align: right;
-
+  width: 100%;
+  text-align: right;
 }
 
-        .footer-copyright-p {
-          font-size: 20px;
-          color: #191919;
-          margin-right: 35px;    
-        }
-
-/* CSS of Member (Tri) */
+.footer-copyright-p {
+  font-size: 20px;
+  color: #191919;
+  margin-right: 35px;
+}
 
 @media (max-width: 768px) {
+  .recommend-part {
+    height: 300px;
+  }
 
- /* CSS of Member (Tri) */
- 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 72px;
-  background-color: #e8e7e7;
-  border-radius: 14px 14px;
-  
+  /* CSS of Member (Tri) */
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #e8e7e7;
+    border-radius: 14px 14px;
+  }
+
+  .footer-logo {
+    width: 30%;
+    display: none;
+  }
+
+  .footer-p {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px #000000;
+    color: #191919;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .footer-logo img {
+    width: 74px;
+    height: 44px;
+    object-fit: cover;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .footer-nav {
+    width: 100%;
+    display: none;
+  }
+  .footer-nav a {
+    text-align: center;
+    color: #191919;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-copyright-p {
+    font-size: 20px;
+    color: #191919;
+    margin-right: 35px;
+  }
 }
-      .footer-logo {
-        width: 30%;
-        display: none; 
-      }
 
-          .footer-p {
-              text-align: left;
-              font-size: 36px;
-              font-weight: bold;
-              text-shadow: 0px 2px 2px #000000;
-              color: #191919;     
-              margin-left: 35px; 
-              margin-right: 10px;; 
-          }
-
-           .footer-logo img {
-              width: 74px;
-              height: 44px;
-              object-fit: cover;
-              margin-left: 35px; 
-              margin-right: 10px;; 
-          }
-
-.footer-nav {
- width: 100%;
- display: none;
-}
-        .footer-nav a {
-          text-align: center;
-          color: #191919;
-          font-size: 20px;
-          font-weight: 500;
-        }
-
-.footer-copyright {
-width: 100%;
-text-align: center;
-}
-        .footer-copyright-p {
-          font-size: 20px;
-          color: #191919;
-          margin-right: 35px;    
-        }
-
-/* CSS of Member (Tri) */ 
-
-}   
 /*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
