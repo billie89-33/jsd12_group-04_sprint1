@@ -36,11 +36,15 @@
 /*-container-jolyne-bank-*/
 .second-banner-container-left-inside-3-4rd {
   display: flex;
-  width: 100%;
-  height: 304px;
-  background-color: rgb(155, 154, 154);
+  width: 100%; /* ใช้ min-height แทนเพื่อให้ขยายได้ถ้าเนื้อหาเยอะ */
+  min-height: 304px;
+  background-color: #f2f2f2; /* สีเทานวล */
+  background-image: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  color: black;
   padding: 24px 24px;
   border-radius: 24px;
+  box-sizing: border-box;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .container-jolyne{
@@ -63,18 +67,30 @@
 }
 
 .item2{
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 100%;
+  
+  gap: 10px;
+  align-items: center;
   flex-direction: row;
+  box-sizing: border-box;
 }
 
 .item-img{
-  object-fit: cover; /* ป้องกันรูปเบี้ยว (จะตัดส่วนเกินแทนการบีบ) */
-  width: 20%;
-  height: 100%;
+  flex: 0 0 22%;
+   width: 20%;
+    max-height: 250px; 
+  aspect-ratio: 1 / 1; /* บังคับให้เป็นจัตุรัส */
+  overflow: hidden;    /* ตัดส่วนที่ล้นออก */
   border: 1px solid black;
-  border-radius: 24px
+  border-radius: 24px;
+}
+
+.item-img img {
+  width: 100%;      
+  height: 100%;      
+  object-fit: cover;   /* ให้รูปเต็มพื้นที่ ไม่เบี้ยว */
+  object-position: center ; 
 }
 
 .item-text{
@@ -101,7 +117,6 @@
 }
 
 .your-items-header h3{
-  
   margin: 0px;
 }
 
@@ -112,27 +127,27 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 24px;
-  max-width: 100%;
 }
 
 .your-items-img{
-  flex: 1;
+  flex: 0.8;
   width: 100%;
-  max-width: 300px;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
 .your-items-img img{
-  
+  display: block;
+  object-fit: cover; /* ป้องกันรูปเบี้ยว (จะตัดส่วนเกินแทนการบีบ) */
   width: 100%;
   height: 100%;
   border-radius: 24px;
 }
 
-/*ipad*/
+
 @media (max-width: 768px) {
 .second-banner-container-right{
   display: none;
@@ -147,40 +162,16 @@
 }
 
 .your-items-img{
-  flex: 0.8px;
+  flex: none;
+  height: 100% ;   
+  width: 31%;
+  aspect-ratio: 1/1;
 }
 
 .item-img{
+   min-width: 170px;
   width: 35%;
-}
-
-.item-text{
-  width: 65%;
-}
-
-}
-
-/*ตรงนี้เป็นต้นไปเขียนโค๊ดสำหรับMobile*/
-@media (max-width: 600px){
-  .second-banner-container-right{
-  display: none;
-}
-
   
-.second-banner-container-left{
-  width: 100%;
-}
-
-.second-banner-container-left-inside-3-4rd{
-  width: 100%;
-}
-
-.your-items-img{
-  flex: 0.8px;
-}
-
-.item-img{
-  width: 35%;
 }
 
 .item-text{
@@ -188,4 +179,6 @@
 }
 
 }
+
+
 
