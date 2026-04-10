@@ -14,6 +14,8 @@
 body {
   margin-bottom: 20px;
   background: #f5f5f5;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 /* ==== HEADER & NAV BAR ==== */
@@ -26,7 +28,6 @@ body {
 
 .nav {
   width: 100%;
-  max-width: 1380px;
   background: #e0e0e0;
   display: flex;
   align-items: center;
@@ -119,14 +120,13 @@ body {
 
 .hero-container {
   width: 100%;
-  max-width: 1380px;
   display: flex;
   gap: 20px;
 }
 
 .hero-main {
   flex: 3;
-  height: 400px;
+  height: 536px;
   background: #dcdcdc;
   border-radius: 25px;
   position: relative;
@@ -138,7 +138,7 @@ body {
 
 .hero-secondary {
   flex: 1;
-  height: 400px;
+  height: 536px;
   background: #dcdcdc;
   border-radius: 30px;
   position: relative;
@@ -174,9 +174,9 @@ body {
 .second-banner-container-left {
   display: flex;
   flex-direction: column; /*จัดตรงนนี้ให้ทุกกล่องซ้ายเท่ากันครับ*/
-  gap: 24px;
   width: 70%;
   height: 100%;
+  margin-left: 14px;
 }
 
 .second-banner-container-right {
@@ -203,6 +203,7 @@ body {
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-bottom: 24px;
 }
 
 .container-jolyne {
@@ -475,6 +476,7 @@ body {
   transition: transform 0.2s ease;
   text-decoration: none;
   color: inherit;
+  margin-bottom: 24px;
 }
 
 .recommend-part:hover {
