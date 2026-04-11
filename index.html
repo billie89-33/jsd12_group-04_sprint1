@@ -15,40 +15,67 @@
     />
   </head>
   <body>
-    <header>
-      <!--Navigation (Sign)-->
-      <nav>
-        <div>logo</div>
-        <ul>
+    <!--First Banner (Sign)-->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">logo</div>
+
+        <ul class="menu">
           <li><a href="#">Home</a></li>
+          <li class="divider">|</li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Category</a></li>
+          <li class="divider">|</li>
+          <li class="dropdown">
+            <a href="#">Category</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Digital Art</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Handmade</a></li>
+            </ul>
+          </li>
         </ul>
-        <div>
-          <button>🛒</button>
-          <div><a href="#">register</a> | <a href="#">login</a></div>
+
+        <div class="mobile-icons">
+          <img src="./src/home.svg" alt="home" />
+          <img src="./src/info.svg" alt="about" />
+          <img src="./src/category.svg" alt="category" />
+        </div>
+
+        <div class="right">
+          <div class="cart">
+            <img src="./src/cart.svg" alt="cart" />
+          </div>
+          <div class="auth">
+            <a href="#">register</a> | <a href="#">login</a>
+          </div>
+          <div class="mobile-user">
+            <img src="./src/login.svg" alt="user" />
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <!--First Banner (Sign)-->
-      <section>
-        <article>
-          <div>
-            <h1>Hero <small>main</small></h1>
-            <span>Tag: Digital-art</span>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-main">
+            <img src="./src/Arrow 1.svg" alt="expand" class="arrow-icon">
+            <h1 class="hero-main-content">Hero main</h1>
+            <div class="dots"><span></span><span></span><span></span></div>
+            <small class="tag">Tag: Digital-art</small>
           </div>
-        </article>
 
-        <aside>
-          <h2>hero-secondary</h2>
-          <span>Tag: Music</span>
-        </aside>
+          <div class="hero-secondary">
+            <img src="./src/Arrow 1.svg" alt="expand" class="arrow-icon">
+            <h1 class="hero-secondary-content">Hero secondary</h1>
+            <small class="tag">Tag: Music</small>
+          </div>
+        </div>
       </section>
 
       <div>
-        <p>we are providing Creative</p>
+        <h1 style="text-align: center;">We are Providing Creative</h1>
       </div>
 
       <!--Second Banner-->
@@ -56,27 +83,30 @@
         <!--Left Side-->
         <div class="second-banner-container-left">
           <!--About us (Jolyne)-->
-          <section class="second-banner-container-left-inside">
-            <div>
-              <div>LOGO</div>
-              <div>
+<section class="second-banner-container-left-inside-3-4rd">
+            <div class="container-jolyne">
+              <div class="item1">
                 <h3>About us</h3>
-                <p>we are straw hat pirate aim to be the king of pirate!...</p>
+              </div>
+
+              <div class="item2">
+                <div class="item-img"><img src="๒" alt="" class="Creative market logo"></div>
+                <div class="item-text"><p class="text-item2">we are straw hat pirate aim to be the king of pirate! Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p></div>
               </div>
             </div>
+
           </section>
           <!--Recommend Items (Lin)-->
-          <section class="second-banner-container-left-inside">
-            <div>
-              <h3>Recommend Items</h3>
-              <span>❤️</span>
-            </div>
-            <div>
-              <article>img 60% / Head text 40%</article>
-              <article>img 60% / Head text 40%</article>
-              <article>img 60% / Head text 40%</article>
-            </div>
-          </section>
+          <article>
+            <a href="#" class="recommend-part">
+              <h3 class="recommend-part-title">Recommend Items</h3>
+              <span class="recommend-part-btn" aria-label="see more"
+                >&#8599;</span
+              >
+            </a>
+          </article>
           <!--Highlight: Jolyne (Bank)-->
           <section class="second-banner-container-left-inside-3-4rd">
             <div class="container-jolyne">
@@ -113,24 +143,25 @@
         <!--Right Side: More items (Asha)-->
         <aside class="second-banner-container-right">
           <div>
-            <h3>More items</h3>
-            <span>Tag: Merch</span>
+          <div class="img-wrapper">
+            <a href="https://www.instagram.com/ipon_asha/" target="_blank">
+            <img class="main-img" src="src/asha.jpg" alt="asha" />
+            <div class="white-circle">
+              <img class="arrow" src="src/Arrow 1.svg" alt="arrow" />
+            </div>
           </div>
         </aside>
       </div>
     </main>
     <!--Footer (Tri)-->
-    <footer>
-      <div>
-        <div>logo</div>
-        <nav>
-          <a href="#">About Us</a> | <a href="#">Terms and Conditions</a> |
-          <a href="#">Contact Us</a>
-        </nav>
-      </div>
-      <div>
-        <p>© 2026 Creative Market. All rights reserved.</p>
-      </div>
-    </footer>
+   <footer class="footer-container"> <div class="footer-logo" ><img src="/src/icon_logo_footer.png" alt="logo-footer"></div><div class="footer-p"></div>
+    </div>
+  <nav class="footer-nav"> <a href="#">About Us</a> | 
+    <a href="#">Terms and Conditions</a> |
+    <a href="#">Contact Us</a>
+  </nav>
+  <div class="footer-copyright"> <p class="footer-copyright-p">© 2026 Creative Market. All rights reserved.</p>
+  </div>
+</footer>
   </body>
 </html>
